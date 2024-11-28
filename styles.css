@@ -1,0 +1,310 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilo base do corpo */
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f9f9f9;
+}
+
+/* Banner com efeito */
+.banner {
+  position: relative;
+  height: 60vh;
+  background: url('https://ucarecdn.com/1aa862c2-4afb-4d79-9c13-47bc68ff5d09/-/format/auto/-/preview/750x750/-/quality/lighter/t13-black-home.jpg') no-repeat center center/cover; /* Substitua 'url' pela URL da imagem */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+}
+
+.banner .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.banner-content {
+  position: relative;
+  z-index: 2;
+  animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(-20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+.banner h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.banner p {
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+
+/* Seção de Benefícios */
+.benefits {
+  padding: 2rem;
+  background-color: #fff;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.benefits h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.benefits ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.benefits li {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: #555;
+}
+
+/* Seção de Detalhes da Promoção */
+.promo-details {
+  padding: 2rem;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+.promo-details h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.promo-details p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+/* Seção do formulário */
+.form-section {
+  padding: 2rem;
+  background: #011e3c;
+  text-align: center;
+  margin-top: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-section h2 {
+  margin-bottom: 1.5rem;
+  font-size: 2.5rem;
+  color: #e1dddd;
+}
+
+/* Seção do Produto */
+.product-section {
+  padding: 2rem;
+  background: #fff;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.product-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #003366;
+}
+
+/* Contêiner para as imagens do produto */
+.product-images {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap; /* Permite que as imagens quebrem para uma nova linha em telas pequenas */
+}
+
+.product-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin: 2rem 0;
+  width: 100%;
+  max-width: 300px; /* Tamanho máximo das imagens */
+}
+
+/* Responsividade para imagens */
+@media (max-width: 768px) {
+  .product-images {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product-image img {
+    max-width: 90%; /* Imagens ficam maiores em telas menores */
+  }
+}
+
+
+.promo-form {
+  max-width: 450px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  background-color: #011e3c;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.promo-form label {
+  text-align: left;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  color: #e1dddd;
+}
+
+.promo-form input, .promo-form select {
+  margin-bottom: 1.2rem;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.promo-form select {
+  background-color: #fff;
+}
+
+.promo-form button {
+  padding: 1rem;
+  border: none;
+  background: #007BFF;
+  color: #fff;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.promo-form button:hover {
+  background: #0056b3;
+}
+
+/* Prova Social */
+.testimonials {
+  padding: 2rem;
+  background: #f9f9f9;
+  text-align: center;
+}
+
+.testimonials h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.testimonial {
+  font-size: 1.1rem;
+  font-style: italic;
+  color: #666;
+  margin-bottom: 1.5rem;
+}
+
+.testimonial strong {
+  display: block;
+  font-weight: bold;
+  margin-top: 0.5rem;
+  color: #333;
+}
+
+/* FAQ - Perguntas Frequentes */
+.faq {
+  padding: 2rem;
+  background: #fff;
+  text-align: center;
+}
+
+.faq h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.faq-item {
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+}
+
+.faq-item strong {
+  font-weight: bold;
+  color: #444;
+}
+
+/* Rodapé */
+.footer {
+  padding: 1rem;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 1rem;
+}
+
+/* Responsividade */
+/* A partir de telas menores (tablets e celulares) */
+@media (max-width: 768px) {
+  /* Torna o banner menor para telas pequenas */
+  .banner {
+    height: 40vh;
+  }
+
+  .banner h1 {
+    font-size: 2.5rem;
+  }
+
+  .banner p {
+    font-size: 1rem;
+  }
+
+  /* Ajusta o formulário */
+  .promo-form {
+    width: 90%;
+  }
+
+  .promo-form button {
+    font-size: 1rem;
+  }
+
+  /* Ajusta a seção de benefícios */
+  .benefits h2 {
+    font-size: 2rem;
+  }
+
+  .benefits li {
+    font-size: 1rem;
+  }
+
+  /* Ajusta o título do FAQ */
+  .faq h2 {
+    font-size: 2rem;
+  }
+
+  .testimonial {
+    font-size: 1rem;
+  }
+}

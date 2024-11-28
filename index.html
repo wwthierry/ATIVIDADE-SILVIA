@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page Promoção</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Banner principal -->
+  <header class="banner">
+    <div class="overlay"></div>
+    <div class="banner-content">
+      <h1>Ganhe Seu Cupom Promocional!</h1>
+      <p>Descontos incríveis esperando por você. Inscreva-se agora!</p>
+    </div>
+  </header>
+
+  <!-- Benefícios da Promoção -->
+  <section class="benefits">
+    <h2>Por que aproveitar nossa promoção?</h2>
+    <ul>
+      <li><strong>Desconto Exclusivo:</strong> Ganhe até 30% de desconto em produtos selecionados.</li>
+      <li><strong>Frete Grátis:</strong> Em compras acima de R$150.</li>
+      <li><strong>Pagamento Facilitado:</strong> Parcelamento em até 6x sem juros.</li>
+    </ul>
+  </section>
+
+  <!-- Detalhes da Promoção -->
+  <section class="promo-details">
+    <h2>Detalhes da Oferta</h2>
+    <p>Oferta válida até <strong>31 de Dezembro de 2024</strong>. Não perca!</p>
+    <p>Desconto disponível para os primeiros <strong>100 clientes</strong> que solicitarem o cupom.</p>
+  </section>
+
+  <!-- Seção de Produto (com múltiplas imagens) -->
+<section class="product-section">
+  <h2>Fone de Ouvido Sem Fio Bluetooth</h2>
+
+  <!-- Imagens do Produto -->
+  <div class="product-images">
+    <div class="product-image">
+      <img src="https://ucarecdn.com/b1d3caca-eda4-410a-bea8-01fb9b9b2059/-/format/auto/-/preview/600x600/-/quality/lighter/CASE-ABERTA0001.jpg" alt="Fone de Ouvido Sem Fio Bluetooth">
+    </div>
+    <div class="product-image">
+      <img src="https://ucarecdn.com/4e6b5d06-dfa0-426d-8174-d6d582f13e14/-/format/auto/-/preview/750x750/-/quality/lighter/ht08-pro-melobuds-black.jpg" alt="Imagem do Fone de Ouvido Sem Fio - Vista Lateral">
+    </div>
+    <div class="product-image">
+      <img src="https://ucarecdn.com/8d24da84-43bd-43df-b566-7c328541bb8d/-/format/auto/-/preview/1024x1024/-/quality/lighter/gtr2_home_2.jpg" alt="Imagem do Fone de Ouvido Sem Fio - Detalhe">
+    </div>
+  </div>
+
+  <p>Experimente qualidade de som excepcional e liberdade sem fio. Ideal para o seu dia a dia!</p>
+</section>
+
+  <!-- Formulário para Solicitação do Cupom -->
+  <section class="form-section">
+    <h2>Solicite seu cupom</h2>
+    <form class="promo-form">
+      <label for="name">Nome:</label>
+      <input type="text" id="name" name="name" placeholder="Seu nome" required>
+
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" name="email" placeholder="Seu e-mail" required>
+
+      <label for="promo-code">Cupom:</label>
+      <input type="text" id="promo-code" name="promo-code" placeholder="Digite 'PROMO2024'" required>
+
+      <!-- Novo campo: Cidade -->
+      <label for="city">Cidade:</label>
+      <input type="text" id="city" name="city" placeholder="Sua cidade" required>
+
+      <!-- Novo campo: Contato -->
+      <label for="contact">Contato:</label>
+      <input type="tel" id="contact" name="contact" placeholder="Seu telefone" required>
+
+      <!-- Novo campo: Cliente da loja? -->
+      <label for="is-customer">Você é cliente da loja?</label>
+      <select id="is-customer" name="is-customer" required>
+        <option value="" disabled selected>Selecione uma opção</option>
+        <option value="sim">Sim</option>
+        <option value="nao">Não</option>
+      </select>
+
+      <button type="submit">Solicitar Cupom</button>
+    </form>
+  </section>
+
+  <!-- Prova Social -->
+  <section class="testimonials">
+    <h2>O que nossos clientes dizem</h2>
+    <div class="testimonial">
+      <p>"Adorei o desconto! Super recomendo essa promoção!" – <strong>Maria Silva</strong></p>
+    </div>
+    <div class="testimonial">
+      <p>"Promoção fantástica! Consegui comprar tudo o que queria e ainda economizei." – <strong>João Oliveira</strong></p>
+    </div>
+  </section>
+
+  <!-- FAQ - Perguntas Frequentes -->
+  <section class="faq">
+    <h2>Perguntas Frequentes</h2>
+    <div class="faq-item">
+      <strong>Como eu aproveito a promoção?</strong>
+      <p>Basta preencher o formulário acima e solicitar o cupom. O desconto será aplicado automaticamente no checkout.</p>
+    </div>
+    <div class="faq-item">
+      <strong>Posso usar esse cupom com outros descontos?</strong>
+      <p>A promoção não é cumulativa com outros cupons ou ofertas.</p>
+    </div>
+  </section>
+
+  <!-- Rodapé -->
+  <footer class="footer">
+    <p>&copy; 2024 Yonz. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>
